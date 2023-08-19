@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Restaurant t`zeezotje</title>
+</head>
+<body>
+<header class="kenburns-top-right">
+
+    <menu class="menu__header container">
+        <img class="menu__header__img" src="images/header/logoWhite.png" alt="logo">
+        <ul class="menu__header-menu">
+            <li><a href="#">À la carte</a></li>
+            <li><a href="#">Wijnkaart</a></li>
+            <li><a href="#">Lunchmenu</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="topnav">
+            <img class="navBtn" src="images/header/navBtn.svg">
+            <div class="myLinks">
+                <a href="#">À la carte</a>
+                <a href="#">Wijnkaart</a>
+                <a href="#">Lunchmenu</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <form id="form" class="registration" action="#">
+            <div class="registration__container">
+                <div class="header__form">
+                    <h4>Reserve a table</h4>
+                    <button class="close">X</button>
+                </div>
+
+                <p>Por favor, preencha este formulário para reservar uma mesa.</p>
+                <hr>
+
+                <label><b>Data</b></label>
+                <input class="_req" type="text" placeholder="Digite a data desejada" name="data" required>
+
+                <label><b>Tempo
+                </b></label>
+                <input class="_req" type="text" placeholder="Digite o tempo desejado" name="tempo" required>
+
+                <label><b>Número de pessoas</b></label>
+                <input class="_req" type="text" placeholder="Digite o número de convidados" name="numero" required>
+                <hr>
+
+                <p>A bad day with lunch is better than a good day without it.</p>
+                <button type="submit" class="registerbtn">enviar</button>
+            </div>
+
+        </form>
+        <div class="menu-phone">
+            <img class="menu-phone_image" src="images/header/phoneIcon.png" alt="phone">
+            <a href="#"><p>+32 9 282 57 25</p></a>
+        </div>
+    </menu>
+    <div class="content container ">
+        <h3>OPEN EVERYDAY 6AM - 9PM</h3>
+        <h1 class="slogan">A bad day with lunch is better than a good day without it.</h1>
+        <div class="btns">
+            <button class="reserve">Reserve a table</button>
+            <div class="btns__social">
+                <button class="social">Fb</button>
+                <button class="social">Ig</button>
+                <button class="social">Tw</button>
+                <button class="social">Yt</button>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="menu container">
+        <div class="menu-block__left">
+            <ul>
+                <li>
+                    <h3>Woensdag 12/01</h3>
+                    <div class="menu-left__desc">
+                        <p>Salade met Serrano</p>
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <p>Steak Tartaar </p>
+                    </div>
+                    <hr>
+
+                </li>
+                <li>
+                    <h3>Donderdag 13/01</h3>
+                    <div class="menu-left__desc">
+                        <p>Toast Roquefort </p>
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <p> Penne met Kip en Prei</p>
+                    </div>
+                    <hr>
+
+                </li>
+                <li>
+                    <h3>Vrijdag 14/01</h3>
+                    <div class="menu-left__desc">
+                        <p> Verrassing van de Chef</p>
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <p>Penne met Kip en Prei</p>
+                    </div>
+                    <hr>
+
+                </li>
+                <li>
+                    <h3>Vrijdag 15/01</h3>
+                    <div class="menu-left__desc">
+                        <p>Verrassing van de Chef</p>
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <p>Penne met Kip en Prei</p>
+                    </div>
+                    <hr>
+
+                </li>
+                <li>
+                    <h3> Vrijdag 16/01</h3>
+                    <div class="menu-left__desc">
+                        <p>Verrassing van de Chef</p>
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <img src="images/secondPage/dottedLine.png" alt="dottedLine">
+                        <p>Penne met Kip en Prei</p>
+                    </div>
+                    <hr>
+
+                </li>
+            </ul>
+        </div>
+        <div class="menu-block__right">
+            <img class="menu-left" src="images/secondPage/leftImage.jpg" alt="photo">
+            <div class="menu-rectangle"></div>
+            <img class="menu-right" src="images/secondPage/rightImage.jpg" alt="photo">
+        </div>
+    </section>
+
+    <section class="descriptionPage">
+        <div class="container">
+            <img class="quotes" src="images/thirdPage/quotes.png" alt="''">
+
+
+            <div id="carouselExample" class="description carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <text x="50%" y="50%" fill="#555" dy=".3em">
+                            <h2>Goede service, lekker eten, toffe ambiance</h2>
+                            <p>1 Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                duo
+                                dolores et ea
+                                rebum. Stet clita kasd gubergren.
+                            </p>
+                            <h3>ALAIN HEYNDRICKX</h3>
+                        </text>
+                    </div>
+                    <div class="carousel-item">
+                        <text x="50%" y="50%" fill="#444" dy=".3em">
+                            <h2>Goede service, lekker eten, toffe ambiance</h2>
+                            <p>2 Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                duo
+                                dolores et ea
+                                rebum. Stet clita kasd gubergren.
+                            </p>
+                            <h3>ALAIN HEYNDRICKX</h3>
+                        </text>
+                    </div>
+                    <div class="carousel-item">
+                        <text x="50%" y="50%" fill="#333" dy=".3em">
+                            <h2>Goede service, lekker eten, toffe ambiance</h2>
+                            <p>3 Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                duo
+                                dolores et ea
+                                rebum. Stet clita kasd gubergren.
+                            </p>
+                            <h3>ALAIN HEYNDRICKX</h3>
+                        </text>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                    <svg class="svg-prev" xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="none"
+                         stroke="#ffffff" viewBox="0 0 70 70">
+
+                        <path d="M43.8958 11.9L24.8791 30.9166C22.6333 33.1625 22.6333 36.8375 24.8791 39.0833L43.8958 58.1"
+                              stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                    <svg class="svg-next" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
+                         fill="none" stroke="#ffffff">
+                        <path d="M26.1042 11.9L45.1209 30.9166C47.3667 33.1625 47.3667 36.8375 45.1209 39.0833L26.1042 58.1"
+                              stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </section>
+    <section class="descriptionDishes">
+        <div class="container">
+            <div class="descriptionDishes__voedsel">
+                <div class="descriptionDishes__text">
+                    <h2 class="descriptionDishes__title">LEKKER ETEN</h2>
+                    <hr>
+                    <p>Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze zich op hun gemak voelen. Dat is
+                        onze
+                        filosofie, goed eten in een goede sfeer.</p>
+                </div>
+                <img src="images/descriptionDishes/rightDescription.jpg" alt="photo">
+            </div>
+            <div class="descriptionDishes__sfeer">
+                <img src="images/descriptionDishes/leftDescription.jpg" alt="photo">
+                <div class="descriptionDishes__text">
+                    <h2 class="descriptionDishes__title">TOFFE AMBIANCE</h2>
+                    <hr>
+                    <p>Het creëren van de juiste sfeer is zeer belangrijk voor ons. We nemen onze tijd om te zorgen dat
+                        alle
+                        elementen bijdragen aan de juiste setting.</p>
+                </div>
+            </div>
+            <div class="descriptionDishes__doel">
+                <div class="descriptionDishes__text">
+                    <h2 class="descriptionDishes__title">LEKKERE COCKTAILS</h2>
+                    <hr>
+                    <p>Ons doel is simpel: een gastvrije plek bieden waar u kunt genieten van een onvergetelijke
+                        cocktail,
+                        een goed
+                        gesprek en lekker eten.</p>
+                </div>
+                <img src="images/descriptionDishes/rightBottmDescription.jpg" alt="photo">
+            </div>
+        </div>
+    </section>
+    <section class="sliderPage">
+        <div class="container">
+            <h2 class="slider-title">Sfeerfoto's</h2>
+            <p>De beste manier om de sfeer te ervaren is eens langskomen.<br>
+                In tussentijd hebben we hier alvast wat foto’s voor je klaar.</p>
+            <div class="slider ">
+
+                <button class="swiper-button-prev"></button>
+                <svg class="swiper-prev" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
+                     fill="none" stroke="white">
+                    <path d="M43.8958 11.9L24.8792 30.9166C22.6333 33.1625 22.6333 36.8375 24.8792 39.0833L43.8958 58.1"
+                          stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+                <button class="swiper-button-next"></button>
+                <svg class="swiper-next" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
+                     fill="none" stroke="white">
+                    <path d="M26.1042 11.9L45.1209 30.9166C47.3667 33.1625 47.3667 36.8375 45.1209 39.0833L26.1042 58.1"
+                          stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+
+                <div #swiperRef="" class="swiper mySwiper">
+
+                    <div class=" swiper-wrapper">
+                        <div class="swiper-slide">
+
+                            <img src="images/slaiderPage/firstImage.jpg" class="swiper-slider__section" alt="photo">
+                        </div>
+                        <div class="swiper-slide">
+
+                            <img src="images/slaiderPage/midlImage.jpg" class="swiper-slider__section"
+                                 alt="photo">
+                        </div>
+                        <div class="swiper-slide">
+
+                            <img src="images/slaiderPage/thirdImage.jpg" class="swiper-slider__section" alt="photo">
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+<footer>
+
+    <section class="contacts">
+        <div class="container ">
+            <div class="footer__contacts__top">
+                <div class="contacts__list">
+                    <h2>Contacts</h2>
+                    <ul>
+                        <li>
+                            <div class="footer__list__img">
+                                <img src="images/footer/phone.svg" alt="photo">
+                            </div>
+                            <div class="footer__list__text">
+                                <p>Phone Number</p>
+                                <h3>+32 9 282 57 25</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer__list__img">
+
+                                <img src="images/footer/email.svg" alt="photo">
+                            </div>
+                            <div class="footer__list__text">
+                                <p>Email</p>
+                                <h3>info@email.com</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer__list__img clock">
+
+                                <img src="images/footer/clock.svg" alt="photo">
+                            </div>
+                            <div class="footer__list__text">
+                                <p>Opening Hours</p>
+                                <h3>Everyday from 6 AM - 9 PM</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="footer__list__img addr">
+
+                                <img src="images/footer/address.svg" alt="photo">
+                            </div>
+                            <div class="footer__list__text">
+                                <p>Map Street</p>
+                                <h3>Jl. Raya Surabaya 2787</h3>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts__form"><h2>have any questions?</h2>
+                    <form action="">
+                        <div class="footer__form-top">
+                            <div class="footer__top__input">
+                                <label>Name</label>
+                                <input type="text" placeholder="Input your name">
+                            </div>
+                            <div class="footer__top__input">
+                                <label>Email</label>
+                                <input type="text" placeholder="Input your email">
+                            </div>
+                        </div>
+                        <div class="footer__form__bottom">
+                            <label>Speciale Request</label>
+                            <textarea type="text" placeholder="Input your special request"></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="map">
+        <div class="container">
+            <img src="images/footer/map.jpg" alt="">
+        </div>
+
+    </section>
+    <section class="footer__social">
+        <div class="container">
+            <div class="footer__social__menu">
+                <div class="footer__logo">
+                    <img src="images/footer/logoBlack.png" alt="logo">
+                </div>
+                <div class="btns__footer__social">
+                    <button class="btn__footer__social">Fb</button>
+                    <button class="btn__footer__social">Ig</button>
+                    <button class="btn__footer__social">Tw</button>
+                    <button class="btn__footer__social">Yt</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="index.js"></script>
+<script>
+    document.querySelector(".navBtn").addEventListener("click", myFunction);
+    function myFunction() {
+        let menuHeader = document.querySelector(".menu__header");
+        let getMyLinks = document.querySelector(".myLinks");
+        if (getMyLinks.style.display !== "block") {
+            getMyLinks.style.display = "block";
+            menuHeader.style.height = "0px"
+            menuHeader.style.marginBottom = "150px"
+
+        } else {
+            getMyLinks.style.display = "none"
+            menuHeader.style.height = "25px"
+            menuHeader.style.marginBottom = "50px"
+        }
+    }
+</script>
+
+</body>
+</html>

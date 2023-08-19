@@ -1,0 +1,3 @@
+https://github.com/OksanaDubik/restaurant/pulls
+https://github.com/OksanaDubik/restaurant - ссылка на код  в github
+https://oksanadubik.github.io/restaurant/ - ссылка на сайт
