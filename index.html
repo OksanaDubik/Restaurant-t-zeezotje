@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <form id="form" class="registration" action="#">
+        <form id="form" class="registration" action="sendmail.php" method="post">
             <div class="registration__container">
                 <div class="header__form">
                     <h4>Reserve a table</h4>
@@ -51,17 +51,18 @@
                 <hr>
 
                 <label><b>Data</b></label>
-                <input class="_req" type="text" placeholder="Digite a data desejada" name="data" required>
+                <input class="_req" type="text" placeholder="Введите желаемую дату" name="data" required>
 
-                <label><b>Tempo
+                <label><b>Tempo (время)
                 </b></label>
-                <input class="_req" type="text" placeholder="Digite o tempo desejado" name="tempo" required>
+                <input class="_req" type="text" placeholder="Введите желаемое время" name="tempo" required>
 
-                <label><b>Número de pessoas</b></label>
-                <input class="_req" type="text" placeholder="Digite o número de convidados" name="numero" required>
+                <label><b>Número de pessoas(Число гостей)</b></label>
+                <input class="_req" type="number" placeholder="Введите количество гостей" name="numero" >
                 <hr>
 
-                <p>A bad day with lunch is better than a good day without it.</p>
+                <p>A bad day with lunch is better than a good day without it.</p><br>
+                <p>Плохой день с обедом лучше, чем хороший день без него</p>
                 <button type="submit" class="registerbtn">enviar</button>
             </div>
 
@@ -412,8 +413,10 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
+
 <script>
     document.querySelector(".navBtn").addEventListener("click", myFunction);
+
     function myFunction() {
         let menuHeader = document.querySelector(".menu__header");
         let getMyLinks = document.querySelector(".myLinks");
